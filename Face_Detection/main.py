@@ -8,7 +8,7 @@ while True:
     _, img = cap.read()
     # Convert to grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    # Detect the faces
+    # Detect the faces.
     faces = face_cascade.detectMultiScale(gray, 1.1, 4)
     # Draw the rectangle around each face
     for (x, y, w, h) in faces:
